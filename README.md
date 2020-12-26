@@ -1,43 +1,16 @@
 # Encryption-and-Decryption-Code
-I coded this in Python on IPhone
 
+1.)I'm new to coding in Python
 
-# encrypt and decrypt a text using a simple algorithm of offsetting the letters
+2.)I coded an Encryption and Decryption Code for the first time
 
-key = '123aby781moq5623'
+3.)Code was done in 15 minutes
 
-def encrypt(n, plaintext):
-	"""Encrypt the string and return the ciphertext"""
-	result = ''
+4.)Code was coded in Python
 
-	for l in plaintext.lower():
-		try:
-			i = (key.index(l) + n) % 26
-			result += key[i]
-		except ValueError:
-			result += l
+ 
 
-	return result.lower()
-
-def decrypt(n, ciphertext):
-	"""Decrypt the string and return the plaintext"""
-	result = ''
-
-	for l in ciphertext:
-		try:
-			i = (key.index(l) - n) % 26
-			result += key[i]
-		except ValueError:
-			result += l
-
-	return result
-
-text = "Its dexa coding on python on iphone!"
-offset = 5
-
-encrypted = encrypt(offset, text)
-print('Encrypted:', encrypted)
-
-decrypted = decrypt(offset, encrypted)
-print('Decrypted:', decrypted)
-
+          --Tool is useful for--
+•Decrypting and Encrypting
+•Decrypts numbers, letters, etc.
+•Encrypts words, letters, numbers, etc.
